@@ -1,3 +1,36 @@
 .hero {
-  padding-top: 80px;
+  padding-top: 147px;
+  padding-bottom: 90px;
+  background-color: var(--lightgrey-color);
+  &-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left {
+      max-width: 490px;
+      &__title {
+        font-size: 60px;
+        line-height: 69.5px;
+        margin-bottom: 41px;
+      }
+      &__text {
+        display: block;
+        margin-top: 5px;
+      }
+      &__descr {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 26px;
+      }
+      &__button {
+        padding: 8.5px 26px;
+      }
+    }
+    &-right {
+      position: absolute;
+      top: -82px;
+      right: -129px;
+    }
+  }
 }
