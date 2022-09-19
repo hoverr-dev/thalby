@@ -1,11 +1,10 @@
 // Объявление шрифтов и параметров контейнера
-@mixin poppins-700 {
-  font-family: "Poppins", sans-serif;
+@mixin roboto-700 {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-
-@mixin montserrat-400 {
-  font-family: "Montserrat", sans-serif;
+@mixin roboto-400 {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -16,7 +15,8 @@
 }
 
 .body {
-  @include montserrat-400;
+  @include roboto-400;
+  color: var(--black-color);
   &_hidden {
     overflow: hidden;
   }
@@ -33,4 +33,24 @@
   clip: rect(0 0 0 0);
 }
 
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+
 // Общие стили
+
+.link,
+.title {
+  @include roboto-700;
+}
+
+.link {
+  line-height: 26px;
+  color: var(--eerie-black-color);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 42px;
+}

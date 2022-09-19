@@ -1,10 +1,14 @@
 :root {
   //Основные настройки контейнера
-  --content-width: 1170px;
+  --content-width: 1060px;
   --content-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
 
   // Добавление цвета
   --light-color: #fff;
-  --dark-color: #000;
+  --lightgrey-color: #f0efeb;
+  --snowflake-color: #f0f0f0;
+  --black-color: #000;
+  --eerie-black-color: #1c1b1b;
+  --cerebral-grey-color: rgba(204, 204, 204, 0.3);
 }
