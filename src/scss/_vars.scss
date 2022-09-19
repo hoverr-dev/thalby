@@ -1,0 +1,10 @@
+:root {
+  //Основные настройки контейнера
+  --content-width: 1170px;
+  --content-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--content-offset) * 2));
+
+  // Добавление цвета
+  --light-color: #fff;
+  --dark-color: #000;
+}

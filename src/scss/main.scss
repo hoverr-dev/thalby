@@ -1,0 +1,13 @@
+//Импорт зависимостей
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+//Импорт компонентов страницы
+@import "../components/header";
+@import "../components/hero";
+@import "../components/footer";
+//Импорт media-запросов
+@import "media";

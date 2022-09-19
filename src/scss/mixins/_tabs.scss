@@ -1,0 +1,50 @@
+@mixin tabs {
+  .tab {
+    max-width: 592px;
+    margin-top: 19px;
+    &__wrapper {
+      display: flex;
+      position: relative;
+      margin-bottom: 22px;
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 1px;
+        width: 356px;
+        height: 1px;
+        background-color: #000;
+        z-index: -1;
+      }
+    }
+    &__item {
+      width: 114px;
+      height: 25px;
+      color: #000;
+      background-color: transparent;
+      padding-bottom: 34px;
+      cursor: pointer;
+      &:nth-child(2) {
+        width: 98px;
+      }
+      &:last-child {
+        width: 144px;
+      }
+      &_active {
+        color: blue;
+        border-bottom: 2px solid blue;
+      }
+    }
+    &__text {
+      line-height: 26px;
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+    }
+    &-card {
+      &_hidden {
+        display: none;
+      }
+    }
+  }
+}
+@include tabs();

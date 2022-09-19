@@ -1,0 +1,52 @@
+@mixin accordion {
+  .accordion {
+    width: 100%;
+    max-width: 500px;
+    &-item {
+      &__title {
+        min-height: 45px;
+        display: flex;
+        position: relative;
+        padding-left: 43px;
+        line-height: 42px;
+        cursor: pointer;
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          top: 18px;
+          left: 0;
+          width: 22px;
+          height: 2px;
+          background-color: orangered;
+        }
+        &::before {
+          transition: transform 0.3s ease-in-out;
+        }
+        &::after {
+          transition: transform 0.3s, opacity 0.3s ease-in-out;
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        &.active {
+          &::after {
+            opacity: 1;
+            transform: rotate(90deg);
+          }
+        }
+      }
+      &__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        &-content {
+          margin-top: 12px;
+          line-height: 1;
+          padding-left: 43px;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+@include accordion;

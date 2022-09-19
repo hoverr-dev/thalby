@@ -1,0 +1,65 @@
+//Подключение медиа-запросов
+@media screen and (max-width: 991.98px) {
+  .header {
+    &__wrapper {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 55;
+    }
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    padding: 0 15px;
+    &__link {
+      opacity: 0;
+      transition: opacity 0.06s ease;
+    }
+    &__list {
+      position: fixed;
+      display: block;
+      transform: translateY(-200%);
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.25s ease;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: grey;
+      text-align: center;
+      &_active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0);
+        overflow: auto;
+        opacity: 1;
+        transition: transform 0.4s ease, opacity 0.25s ease;
+        .menu__link {
+          opacity: 1;
+          transition: opacity 0.06s ease;
+        }
+      }
+    }
+    &__item {
+      text-align: center;
+      padding: 20px 0;
+    }
+    &__item + .menu__item {
+      margin-left: 0;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+    &__link {
+      font-size: 30px;
+    }
+  }
+  .logo {
+    z-index: 3;
+  }
+}
