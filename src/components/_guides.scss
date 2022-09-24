@@ -1,0 +1,56 @@
+.guides {
+  padding-top: 60px;
+  padding-bottom: 240px;
+  &__title {
+    margin-bottom: 27px;
+    &_sellers {
+      margin-bottom: 52px;
+    }
+  }
+  &__descr {
+    max-width: 632px;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+    &_margin {
+      margin-bottom: 88px;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    &__list {
+      max-width: 310px;
+    }
+    &__img {
+      margin-bottom: 27px;
+    }
+    &__item {
+      max-width: 156px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__title,
+    &__price,
+    &__link {
+      font-size: 17px;
+      line-height: 19px;
+    }
+    &__title,
+    &__link {
+      font-weight: 700;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__price {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    &__link {
+      color: var(--black-color);
+      border-bottom: 1px solid var(--black-color);
+    }
+  }
+}
